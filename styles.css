@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 :root {
   --body-bgc: #f5f7f8;
@@ -14,7 +14,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* .main-wrapper {
@@ -32,9 +32,6 @@ body {
 }
 .middle-container {
   background-color: var(--bs-warning-bg-subtle);
-}
-.right-container {
-  background-color: var(--bs-danger-bg-subtle);
 }
 
 /* Header css */
@@ -93,12 +90,98 @@ header {
   font-size: 10px;
 }
 
-/* Zarina css start */
-
-/* Zarina css end */
 /* Ayzada css start */
 
 /* Ayzada css end */
+
+/* Right-col styles */
+.right-container {
+}
+
+.events,
+.request,
+.ads,
+.bug {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  margin-bottom: 25px;
+}
+
+.events img {
+  width: 100%;
+}
+
+.events,
+.request {
+  padding: 20px;
+}
+
+.text {
+  font-weight: 900;
+}
+
+.btn {
+  display: inline-block;
+  color: black;
+  border: 1px solid #dfe5e8;
+  background-color: #dfe5e8;
+  width: 100%;
+  padding: 10px 0;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #ccc;
+}
+
+.request img {
+  width: 50%;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+}
+
+.add,
+.cancel {
+  padding: 12px 42px;
+  border: transparent;
+  outline: none;
+  font-weight: bold;
+  font-size: medium;
+  color: white;
+}
+
+.add:hover,
+.cancel:hover {
+  background-color: #e0e0ee;
+  color: #666;
+}
+
+.add {
+  background-color: #94cf96;
+}
+
+.cancel {
+  background-color: #f88e86;
+  float: right;
+}
+
+.ads {
+  padding: 20px 0;
+}
+
+.bug {
+  padding: 50px 0;
+}
+
+.bug i {
+  font-size: 30px;
+}
+
+/* Zarina css end */
 
 /* Footer */
 footer {
