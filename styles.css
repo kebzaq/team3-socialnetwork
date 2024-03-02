@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 :root {
   --body-bgc: #f5f7f8;
@@ -14,7 +14,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* .main-wrapper {
@@ -31,7 +31,7 @@ body {
   height: 78vh;
 }
 .middle-container {
-  background-color: var(--bs-warning-bg-subtle);
+  background-color: var(--card-bgc);
 }
 
 /* Header css */
@@ -91,6 +91,57 @@ header {
 }
 
 /* Ayzada css start */
+.status-field {
+  border: 1px solid #ccc;
+  padding: 8px 16px;
+}
+.post-btn {
+  border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--card-bgc);
+  background-color: var(--blue);
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  margin-bottom: 16px;
+}
+.time {
+  float: right;
+}
+.post-container {
+  padding: 0.1em 16px;
+  margin: 16px;
+  font-size: 13px;
+  text-size-adjust: 100%;
+}
+.post-shadow {
+  box-shadow: var(--box-shadow);
+}
+.post-br {
+  border-radius: 4px;
+}
+.post-left {
+  float: left;
+}
+
+.av-circle {
+  border-radius: 50%;
+}
+
+.post-right {
+  margin-right: 16px;
+}
+.post1-img {
+  padding: 0 8px;
+}
+.post1-2img {
+  padding: 0 8px;
+  margin-bottom: 16px;
+}
 
 /* Ayzada css end */
 
