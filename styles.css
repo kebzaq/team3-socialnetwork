@@ -1,25 +1,25 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 :root {
   --body-bgc: #f5f7f8;
   --card-bgc: white;
   --blue: #199de5;
   --dark-blue: #076490;
-  --box-shadow: 2px 1px 15px -5px rgba(13, 12, 13, 1);
+  --box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   --hover-color: #ccc;
+  --dark-color: #000;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
-/* .main-wrapper {
-  max-width: 1200px;
-} */
 /* Common css styles */
 /* Dev css */
 .main-wrapper {
@@ -27,7 +27,6 @@ body {
   margin-bottom: 20px;
 }
 .left-container {
-  /* background-color: var(--bs-success-bg-subtle); */
   height: 78vh;
 }
 .middle-container {
@@ -146,16 +145,14 @@ header {
 /* Ayzada css end */
 
 /* Right-col styles */
-.right-container {
-}
 
 .events,
 .request,
 .ads,
 .bug {
   border: 1px solid transparent;
-  border-radius: 5px;
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  border-radius: 4px;
+  box-shadow: var(--box-shadow);
   margin-bottom: 25px;
 }
 
@@ -165,25 +162,26 @@ header {
 
 .events,
 .request {
-  padding: 20px;
+  padding: 15px;
 }
 
 .text {
-  font-weight: 900;
+  font-weight: 600;
 }
 
-.btn {
+.infoBtn {
   display: inline-block;
-  color: black;
+  color: var(--dark-color);
   border: 1px solid #dfe5e8;
+  border-radius: 2px;
   background-color: #dfe5e8;
   width: 100%;
   padding: 10px 0;
   text-decoration: none;
 }
 
-.btn:hover {
-  background-color: #ccc;
+.infoBtn:hover {
+  background-color: var(--hover-color);
 }
 
 .request img {
@@ -197,12 +195,13 @@ header {
 
 .add,
 .cancel {
-  padding: 12px 42px;
+  padding: 6px 20px;
   border: transparent;
+  border-radius: 2px;
   outline: none;
   font-weight: bold;
   font-size: medium;
-  color: white;
+  color: var(--card-bgc);
 }
 
 .add:hover,
@@ -217,19 +216,24 @@ header {
 
 .cancel {
   background-color: #f88e86;
-  float: right;
 }
 
 .ads {
-  padding: 20px 0;
+  padding: 28px 0;
+  text-transform: uppercase;
+}
+
+.ads p {
+  margin: 0;
 }
 
 .bug {
-  padding: 50px 0;
+  padding: 40px 0;
 }
 
 .bug i {
   font-size: 30px;
+  color: var(--dark-color);
 }
 
 /* Zarina css end */
