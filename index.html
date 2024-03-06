@@ -54,12 +54,12 @@
 
     <!-- Main wrapper for all 3 flexboxes -->
     <div class="main-wrapper container text-center col-xxl-">
-      <div class="row justify-content-between">
+      <div class="row">
         <!-- Left flex-container starts-->
         <div class="left-container col-3">
           <!-- My Profile  -  Kai -->
           <div class="d-flex flex-column">
-            <div class="left-box left-profile p-2">
+            <div class="left-box left-profile p-2 box-shadow">
               <h4>My Profile</h4>
               <p class="profile-image">
                 <img src="./images/marat.jpeg" alt="Profile image" />
@@ -79,38 +79,82 @@
               </p>
             </div>
 
-            <div class="left-box left-accordion">
-              <button class="groups">My Groups</button>
+            <div class="left-box left-accordion box-shadow">
+              <button class="my-groups">
+                <i class="fa fa-circle-o-notch fa-fw"></i>
+                My Groups
+              </button>
               <p>Some text ...</p>
-              <button class="events">My Events</button>
+              <button class="my-events">
+                <i class="fa fa-calendar-check-o fa-fw"></i>
+                My Events
+              </button>
               <p>Some other text ...</p>
-              <button class="photos">My Photos</button>
-              <div class="gallery"></div>
+              <button class="my-photos">
+                <i class="fa fa-users fa-fw"></i>
+                My Photos
+              </button>
+              <div class="gallery">
+                <div class="pics">
+                  <img src="images/lights.jpeg" class="w3-margin-bottom" />
+                </div>
+                <div class="pics">
+                  <img src="images/nature.jpeg" class="w3-margin-bottom" />
+                </div>
+                <div class="pics">
+                  <img src="images/mountains.jpeg" />
+                </div>
+                <div class="pics">
+                  <img src="images/forest.jpeg" />
+                </div>
+                <div class="pics">
+                  <img src="images/nature.jpeg" />
+                </div>
+                <div class="pics">
+                  <img src="images/snow.jpeg" />
+                </div>
+              </div>
             </div>
 
-            <div class="left-box left-interests p-2">
+            <div class="left-box left-interests p-2 box-shadow">
               <h6>Interests</h6>
+              <p>
+                <span class="tag dark-blue">News</span>
+                <span class="tag dark-blue">Seytech</span>
+                <span class="tag blue">Algos</span>
+                <span class="tag blue">Friends</span>
+                <span class="tag blue">Games</span>
+                <span class="tag dark-grey">Food</span>
+                <span class="tag dark-grey">Design</span>
+                <span class="tag grey"> Art</span>
+                <span class="tag grey">Photos</span>
+              </p>
             </div>
 
-            <div class="left-box left-alert-box p-2">
-              <h6>Hey</h6>
+            <div
+              class="left-box left-alert-box p-2 grey box-shadow position-relative"
+            >
+              <h6>Hey!</h6>
+              <i
+                class="fa fa-close dark-grey position-absolute top-0 end-0"
+              ></i>
+              <p>People are looking at your profile. Find out who.</p>
             </div>
           </div>
-          <!-- all other flex-items  - Gulburak -->
         </div>
         <!-- Left flex-container ends -->
 
         <!-- Middle flex-container starts-->
         <div class="middle-container col-7">
           <!-- Ayzada -->
-          <div class="status post-shadow post-br">
+          <div class="status post-br box-shadow">
             <p contenteditable="true" class="status-field">
               Status: Feeling Blue
             </p>
             <br />
             <button class="post-btn"><i class="fa fa-pencil"></i>Post</button>
           </div>
-          <div class="post-container post-shadow post-br">
+          <div class="post-container box-shadow post-br">
             <br />
             <img
               src="https://learn.seytech.co/assets/projects/html-css/projects/6-social-network/assets/rachel.jpeg"
@@ -146,7 +190,7 @@
               <i class="fa fa-comment"></i> Comment
             </button>
           </div>
-          <div class="post-container post-shadow post-br">
+          <div class="post-container box-shadow post-br">
             <br />
             <img
               src="https://learn.seytech.co/assets/projects/html-css/projects/6-social-network/assets/aikol.jpeg"
@@ -162,83 +206,88 @@
               Developer Relations dream team in Azure engineering. Our global
               team is...
             </p>
-        
-          <button class="post-btn"><i class="fa fa-thumbs-up"></i> Like</button>
-          <button class="post-btn">
-            <i class="fa fa-comment"></i> Comment
-          </button>
-        </div>
-    <div class="post-container post-shadow post-br">
-      <br />
-      <img
-        src="https://learn.seytech.co/assets/projects/html-css/projects/6-social-network/assets/ulan.jpeg"
-        class="post-left av-circle post-right"
-        style="width: 70px"
-      />
-      <span class="time">32 min</span>
-      <h4>L'uan R</h4>
-      <br />
-      <hr />
-      <p>Have you seen this?</p>
-      <div class="post1-img">
-        <img
-          src="https://learn.seytech.co/assets/projects/html-css/projects/6-social-network/assets/web.png"
-          style="width: 100%"
-        />
-      </div>
-      <button class="post-btn"><i class="fa fa-thumbs-up"></i> Like</button>
-      <button class="post-btn"><i class="fa fa-comment"></i> Comment</button>
-    </div>
-  </div>
-    <!-- Middle flex-container ends -->
 
-    <!-- Right flex-conttainer starts -->
-
-    <div class="right-container col-2">
-      <!-- Zarina -->
-
-      <div class="events">
-        <p>Upcoming Events:</p>
-        <img class="img-react" src="./images/event.png" alt="" />
-        <p class="text">React Course</p>
-        <p>Friday 15:00</p>
-        <a href="" class="infoBtn">Info</a>
-      </div>
-
-      <div class="request">
-        <p>Friend Request</p>
-        <div class="img-photo">
-          <img
-            src="http://learn.seytech.co/assets/images/avatars/default.jpg"
-            alt=""
-          />
-          <p>Shiba Inu</p>
-        </div>
-        <div class="btns">
-          <div class="icon">
-            <button class="add">
-              <i class="fa fa-check"></i>
+            <button class="post-btn">
+              <i class="fa fa-thumbs-up"></i> Like
+            </button>
+            <button class="post-btn">
+              <i class="fa fa-comment"></i> Comment
             </button>
           </div>
-          <div class="icon">
-            <button class="cancel">
-              <i class="fa fa-remove"></i>
+          <div class="post-container box-shadow post-br">
+            <br />
+            <img
+              src="https://learn.seytech.co/assets/projects/html-css/projects/6-social-network/assets/ulan.jpeg"
+              class="post-left av-circle post-right"
+              style="width: 70px"
+            />
+            <span class="time">32 min</span>
+            <h4>L'uan R</h4>
+            <br />
+            <hr />
+            <p>Have you seen this?</p>
+            <div class="post1-img">
+              <img
+                src="https://learn.seytech.co/assets/projects/html-css/projects/6-social-network/assets/web.png"
+                style="width: 100%"
+              />
+            </div>
+            <button class="post-btn">
+              <i class="fa fa-thumbs-up"></i> Like
+            </button>
+            <button class="post-btn">
+              <i class="fa fa-comment"></i> Comment
             </button>
           </div>
         </div>
-      </div>
+        <!-- Middle flex-container ends -->
 
-      <div class="ads">
-        <p>Ads</p>
-      </div>
+        <!-- Right flex-conttainer starts -->
+        <div class="right-container col-2">
+          <!-- Zarina -->
 
-      <div class="bug">
-        <i class="fa fa-bug"></i>
+          <div class="events box-shadow">
+            <p>Upcoming Events:</p>
+            <img class="img-react" src="./images/event.png" alt="" />
+            <p class="text">React Course</p>
+            <p>Friday 15:00</p>
+            <a href="" class="infoBtn">Info</a>
+          </div>
+
+          <div class="request box-shadow">
+            <p>Friend Request</p>
+            <div class="img-photo">
+              <img
+                src="http://learn.seytech.co/assets/images/avatars/default.jpg"
+                alt=""
+              />
+              <p>Shiba Inu</p>
+            </div>
+            <div class="btns">
+              <div class="icon">
+                <button class="add">
+                  <i class="fa fa-check"></i>
+                </button>
+              </div>
+              <div class="icon">
+                <button class="cancel">
+                  <i class="fa fa-remove"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="ads box-shadow">
+            <p>Ads</p>
+          </div>
+
+          <div class="bug box-shadow">
+            <i class="fa fa-bug"></i>
+          </div>
+        </div>
       </div>
+      <!-- Right flex-container ends -->
     </div>
-
-    <!-- Right flex-container ends -->
-
     <!-- Main wrapper ends -->
 
     <!-- Footer starts -->
