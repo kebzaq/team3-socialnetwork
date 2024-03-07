@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 :root {
   --body-bgc: #f5f7f8;
@@ -7,6 +7,7 @@
   --dark-blue: #076490;
   --box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   --hover-color: #ccc;
+  --dark-grey: grey;
   --dark-color: #000;
 }
 
@@ -17,14 +18,34 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* Common css styles */
+.dark-blue {
+  background-color: var(--dark-blue);
+}
+.blue {
+  background-color: var(--blue);
+}
+.dark-grey {
+  background-color: var(--dark-grey);
+}
+.grey {
+  background-color: var(--hover-color);
+}
+.box-shadow {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: var(--box-shadow);
+  margin-bottom: 20px;
+}
+
 /* Dev css */
 .main-wrapper {
   margin-top: 20px;
   margin-bottom: 20px;
+  font-size: 11px;
 }
 .left-container {
   height: 78vh;
@@ -48,8 +69,8 @@ header {
 }
 .fa {
   color: var(--body-bgc);
-  font-size: 18px;
-  padding: 5px 15px;
+  font-size: 15px;
+  padding: 5px 10px;
 }
 .nav-home:hover {
   background-color: lightgrey;
@@ -64,29 +85,65 @@ header {
     color: black;
   }
 }
+.main-wrapper {
+}
 
 /* Left-container: My Profile, etc... */
-.left-box {
-  box-shadow: var(--box-shadow);
 
-  margin: 10px 0px;
+.left-box h4 {
+  font-size: 14px;
 }
-.left-profile h4 {
-  font-size: 16px;
+.left-box h6 {
+  font-size: 12px;
 }
 .profile-image img {
   border-radius: 50%;
-  width: 60%;
+  width: 50%;
 }
 .profile-info {
   text-align: left;
-  font-size: 10px;
   margin: 0;
   padding: 0;
 }
 .profile-info .fa {
   color: #607d8b;
+}
+.left-accordion button {
+  background-color: var(--blue);
+  width: 100%;
+  /* display: inline-block; */
+  padding: 3px;
+  text-align: left;
+  color: var(--body-bgc);
+  border: none;
+  .fa {
+    font-size: 12px;
+    margin-right: 7%;
+  }
+}
+.pics img {
+  width: 80%;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-row-gap: 7px;
+  padding: 10px;
+}
+.left-interests p {
+  text-align: left;
+}
+.left-box h6 {
+  text-align: left;
+}
+.tag {
+  display: inline-block;
+  margin: 2px;
+  padding: 2px 4x;
+}
+.fa-close {
   font-size: 10px;
+  color: black;
 }
 
 /* Ayzada css start */
@@ -146,7 +203,7 @@ header {
 
 /* Right-col styles */
 
-.events,
+/* .events,
 .request,
 .ads,
 .bug {
@@ -154,7 +211,7 @@ header {
   border-radius: 4px;
   box-shadow: var(--box-shadow);
   margin-bottom: 25px;
-}
+} */
 
 .events img {
   width: 100%;
@@ -241,6 +298,7 @@ header {
 /* Footer */
 footer {
   color: var(--body-bgc);
+  padding: 0;
 }
 .footer {
   background-color: var(--blue);
